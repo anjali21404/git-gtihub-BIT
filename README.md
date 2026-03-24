@@ -1,1 +1,1 @@
-# git-gtihub-BIT
+# git-github-BIT
