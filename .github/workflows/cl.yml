@@ -8,3 +8,6 @@ jobs:                          # Define jobs
     steps:                     # Steps to execute
       - name: Checkout code    # Step name
         uses: actions/checkout@v4  # Use an action
+      
+      - name: Run tests        # Another step
+        run: npm test          # Run a command
