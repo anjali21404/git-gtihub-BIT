@@ -6,17 +6,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "Buliding"
       - run: echo "Building..."
   
   test:
     needs: build          # Wait for build to complete
     runs-on: ubuntu-latest
     steps:
+      - run: echo("testing")
       - run: echo "Testing..."
   
   deploy:
     needs: [build, test]  # Wait for both build and test
     runs-on: ubuntu-latest
     steps:
+      - run: echo "application"
       - run: echo "Deploying..."
   
